@@ -1,0 +1,168 @@
+/*
+Theme Name: Jordan Theme
+Theme URI: http://jordanalamilla.com
+Author: Jordan Alamilla
+Author URI: http://jordanalamilla.com
+Description: Simple WordPress theme based on Bootstrap
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* === CUSTOM CSS === */
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  /* animation: fadein 1s ease; */
+}
+
+.container { max-width: 800px; }
+
+main { padding-top: 40px; }
+
+body, nav a, .blog-post a { color: #444; }
+
+/* NAVIGATION */
+nav a {
+  text-transform: lowercase;
+  font-weight: 700;
+}
+
+.blog-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .blog-header img {
+    width: 140px;
+  }
+  
+  .blog-header-logo {
+    font-size: 2.25rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    text-transform: lowercase;
+    letter-spacing: -2px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 { font-size: 120%; }
+  
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+  
+  .nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-scroller .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+  
+  .h-250 { height: 250px; }
+  @media (min-width: 768px) {
+    .h-md-250 { height: 250px; }
+  }
+  
+  /*
+   * Blog name and description
+   */
+  .blog-title {
+    margin-bottom: 0;
+  }
+  
+  /*
+   * Blog posts
+   */
+  .blog-post {
+    margin-bottom: 100px;
+  }
+
+  .blog-post a {
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+  }
+
+  .blog-post-title {
+    margin-bottom: .25rem;
+  }
+  .blog-post-meta {
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+  }
+  
+  /*
+   * Footer
+   */
+  .blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    /* background-color: #f9f9f9; */
+    border-top: .05rem solid #e5e5e5;
+  }
+  .blog-footer p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* KEYFRAMES */
+
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  @-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  @-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
