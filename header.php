@@ -15,6 +15,9 @@
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet">
 
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <!-- FOR PLUGINS TO LINK THEIR RESOURCES -->
     <?php wp_head(); ?>
 
